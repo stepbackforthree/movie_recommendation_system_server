@@ -8,9 +8,9 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     # 配置连接数据库信息
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://rm-xxx.mysql.rds.aliyuncs.com:3306/mrs?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
-    username: xxx
-    password: xxx
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: why961129
   mail:
     # 发送邮件服务器
     host: smtp.qq.com
@@ -28,6 +28,10 @@ spring:
     properties.mail.smtp.starttls.enable: true
     properties.mail.smtp.starttls.required: true
     properties.mail.smtp.ssl.enable: true
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
 
 
 # 配置MyBatis日志
